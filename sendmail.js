@@ -1,4 +1,4 @@
-document.querySelector(".contact_form").addEventListener("submit", submitForm);
+document.querySelector(".contact_form").addEventListener("Send Message", submitForm);
 
 
 function submitForm(e) {
