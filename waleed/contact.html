@@ -47,13 +47,13 @@
                                     <li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portfolio Details</a></li>
 								</ul>
 							</li>-->
-                            <li class="nav-item submenu dropdown">
+                            <!-- <li class="nav-item submenu dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                                     <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
@@ -105,31 +105,34 @@
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <form class="row contact_form" action="Test.php" method="post" id="contactForm" novalidate="novalidate">
+                    <form class="row contact_form" method="post" novalidate="novalidate">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                                <input type="text" class="form-control name" name="name" placeholder="Enter your name" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" required>
+                                <input type="email" class="form-control email" name="email" placeholder="Enter email address" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject" required>
+                                <input type="text" class="form-control subject" name="subject" placeholder="Enter Subject" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message" maxlength="200" required></textarea>
+                                <textarea class="form-control message" name="message" rows="1" placeholder="Enter Message" maxlength="200" required></textarea>
                             </div>
                         </div>
                         <div class="col-md-12 text-right">
-                            <input type="submit" value="Send Message" class="primary_btn">
+                            <!-- <input type="submit" value="Send Message" class="primary_btn"> -->
+                            <button type="submit" class="primary_btn">Send Message</button>
                         </div>
+
+                        <p id="MessageSent" style="color:rgb(128, 128, 128); font-size: 20px; font-weight: bold;"> </p>
                     </form>
                 </div>
             </div>
 
-            <div class="mapouter">
+            <!-- <div class="mapouter">
                 <div class="gmap_canvas"><iframe width="1110" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=colchester%2C%20united%20kingdom&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google
                     Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
                 <style>
@@ -147,7 +150,7 @@
                         width: 1110px;
                     }
                 </style>
-            </div>
+            </div> -->
         </div>
     </section>
     <!--================Contact Area =================-->
@@ -176,7 +179,7 @@
             <div class="row footer_bottom justify-content-center">
                 <p class="col-lg-8 col-sm-12 footer-text">
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Waleed</a>
+                    All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">WaleedDev</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
             </div>
@@ -198,9 +201,10 @@
     <script src="js/jquery.ajaxchimp.min.js"></script>
     <script src="js/mail-script.js"></script>
     <!--gmaps Js-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-    <script src="js/gmaps.min.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script> -->
     <script src="js/theme.js"></script>
+    <script src="../sendmail.js"></script>
 </body>
 
 </html>
